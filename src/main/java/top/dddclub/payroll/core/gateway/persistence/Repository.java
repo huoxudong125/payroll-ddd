@@ -91,6 +91,7 @@ public class Repository<E extends AggregateRoot, ID extends Identity> {
         }
     }
 
+    @Override
     public void finalize() {
         entityManager.close();
     }
