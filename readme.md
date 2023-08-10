@@ -28,7 +28,10 @@
 * 支付
     * 向满足条件的雇员账户发起转账
     * 生成支付凭条
-    
+
+### UML 时序图 
+ [张逸老师 Payroll DDD 项目的时序图](https://github.com/agiledon/payroll-ddd)
+
 ### 时序图脚本
 
 ```
@@ -72,6 +75,7 @@ PaymentAppService.pay() {
         }
     }
 }
+
 ```
 
 ## 环境
