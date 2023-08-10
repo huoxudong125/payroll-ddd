@@ -31,7 +31,7 @@
     
 ### 时序图脚本
 
-```
+``` java
 PaymentAppService.pay() {
     PaymentService.pay() {
         PayDayService.isPayday(today) {
@@ -103,13 +103,13 @@ PaymentAppService.pay() {
 
 一旦准备好flywaydb的环境，就可以运行命令执行DB的清理：
 
-```
+``` shell
 mvn flyway:clean
 ```
 
 或执行命令执行DB的迁移：
 
-```
+```  shell
 mvn flyway:migrate
 ```
 
@@ -148,4 +148,4 @@ mvn flyway:migrate
 
 默认情况下，如果运行`mvn test`则只会运行单元测试。如果确保数据库已经准备好，且通过flywaydb确保了数据库的表结构与测试数据已经准备好，则可以运行`mvn integration-test`。该命令会运行所有测试，包括单元测试和集成测试。
 
-**注意：**项目中所有的单元测试以`Test`为测试类后缀，所有集成测试以`IT`为测试类后缀。
+**注意：** 项目中所有的单元测试以`Test`为测试类后缀，所有集成测试以`IT`为测试类后缀。
